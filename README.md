@@ -17,7 +17,7 @@ If you already have it installed, run the server by: `$ json-server --watch db.j
 
 ## Build a simple, Event-driven, JavaScript DOM-modifying application
 
-* Populate page with quotes with a `GET` request to
+<!-- * Populate page with quotes with a `GET` request to
   `http://localhost:3000/quotes?_embed=likes`. The query string in this URL tells 
   `json-server` to include the likes for a quote in the JSON of the response. You
   should not use this query string when creating or deleting a quote.
@@ -33,21 +33,21 @@ If you already have it installed, run the server by: `$ json-server --watch db.j
         <button class='btn-danger'>Delete</button>
       </blockquote>
     </li>
-  ```
+  ``` -->
 
-* Submitting the form creates a new quote and adds it to the list of quotes
-  without having to refresh the page. Pessimistic rendering is reccommended.
+<!-- * Submitting the form creates a new quote and adds it to the list of quotes
+  without having to refresh the page. Pessimistic rendering is reccommended. -->
 
-* Clicking the delete button should delete the respective quote from the
-  API and remove it from the page without having to refresh.
+<!-- * Clicking the delete button should delete the respective quote from the
+  API and remove it from the page without having to refresh. -->
 
-* Clicking the like button will create a like for this particular quote in the
+<!-- * Clicking the like button will create a like for this particular quote in the
   API and update the number of likes displayed on the page without having to
   refresh.
   * Use a `POST` request to `http://localhost:3000/likes`
   * The body of the request should be a JSON object containing a key of
     `quoteId`, with an _integer_ value. Use the ID of the quote you're creating the like for — e.g. `{ quoteId: 5 }` to create a like for quote 5. 
-    * IMPORTANT: if the `quoteID` is a string for some reason (for example, if you've pulled the ID from a dataset) the index page will not include the like you create on _any_ quote.
+    * IMPORTANT: if the `quoteID` is a string for some reason (for example, if you've pulled the ID from a dataset) the index page will not include the like you create on _any_ quote. -->
   * Bonus (not required): add a `createdAt` key to your object to track when
     the like was created. Use [UNIX time][] (the number of seconds since
     January 1, 1970). The  [documentation][] for the JS `Date` class may be
